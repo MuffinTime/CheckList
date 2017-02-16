@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIView         *descriptionView;
 
 @property (weak, nonatomic) IBOutlet UIImageView    *photoImageView;
+@property (weak, nonatomic) IBOutlet UILabel        *addPhotoLabel;
 
 @end
 
@@ -55,6 +56,8 @@
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:self.editableTask.image];
         self.photoImageView.image = [UIImage imageWithContentsOfFile:filePath];
+        
+        self.addPhotoLabel.hidden = YES;
     }
 }
 
@@ -185,8 +188,11 @@
             [self selectPhotoLibrary];
             break;
             
-        case 2:
+        case 2: {
+            
             self.photoImageView.image = nil;
+            self.addPhotoLabel.hidden = NO;
+        }
             break;
     }
 }
@@ -204,6 +210,7 @@
         image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
     self.photoImageView.image = image;
+    self.addPhotoLabel.hidden = YES;
 }
 
 

@@ -553,10 +553,18 @@
                                             <outletCollection property="gestureRecognizers" destination="LR8-GK-LG9" appends="YES" id="x9J-pf-Say"/>
                                         </connections>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSy-7l-ihT">
+                                        <rect key="frame" x="120" y="92" width="103.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="GOH-w8-Vcd" firstAttribute="top" secondItem="4Z6-ZB-AR7" secondAttribute="top" constant="5" id="6zS-fR-K9g"/>
+                                    <constraint firstItem="KSy-7l-ihT" firstAttribute="centerX" secondItem="u3n-de-C98" secondAttribute="centerX" id="ARd-3f-Tme"/>
+                                    <constraint firstItem="KSy-7l-ihT" firstAttribute="centerY" secondItem="u3n-de-C98" secondAttribute="centerY" id="CZG-VV-f8w"/>
                                     <constraint firstAttribute="trailing" secondItem="GOH-w8-Vcd" secondAttribute="trailing" id="Lat-Cw-Hvi"/>
                                     <constraint firstItem="u3n-de-C98" firstAttribute="leading" secondItem="4Z6-ZB-AR7" secondAttribute="leading" id="Lds-7P-RFk"/>
                                     <constraint firstAttribute="bottom" secondItem="u3n-de-C98" secondAttribute="bottom" id="Qoj-o7-Lch"/>
@@ -588,6 +596,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addPhotoLabel" destination="KSy-7l-ihT" id="3iD-bz-7Eu"/>
                         <outlet property="descriptionTextView" destination="ENb-4d-ekH" id="JJI-iF-rNr"/>
                         <outlet property="descriptionView" destination="U0c-0F-DDp" id="Mil-Ch-bDC"/>
                         <outlet property="nameField" destination="GVL-Dk-Abt" id="3ln-aB-Kbx"/>
