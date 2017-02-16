@@ -79,7 +79,7 @@
         block(sortedTasks, nil);
 }
 
-- (void)createTask:(NSString *)name taskDescription:(NSString *)description forEvent:(Event *)event withbCompletion:(void (^)(Task *task))block {
+- (void)createTask:(NSString *)name taskDescription:(NSString *)description forEvent:(Event *)event imageData:(NSData *)data withbCompletion:(void (^)(Task *task))block {
     
     Task *task = [Task MR_createEntityInContext:[NSManagedObjectContext MR_defaultContext]];
     
@@ -87,6 +87,22 @@
     task.date               = [NSDate date];
     task.completeStatus     = NO;
     task.taskDescription    = description;
+    
+    // Image
+    if (data) {
+        
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
+        NSString *imageName = [[formatter stringFromDate:[NSDate date]] stringByAppendingString:@".png"];
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:imageName];
+        
+        [UIImagePNGRepresentation([UIImage imageWithData:data]) writeToFile:filePath atomically:YES];
+        
+        task.image = imageName;
+    }
+
     
     
     [event addTasksObject:task];
@@ -97,11 +113,41 @@
         block(task);
 }
 
-- (void)updateTask:(Task *)task taskName:(NSString *)name taskDescription:(NSString *)description withCompletion:(SuccesBlock)block {
+- (void)updateTask:(Task *)task taskName:(NSString *)name taskDescription:(NSString *)description imageData:(NSData *)data withCompletion:(SuccesBlock)block {
     
     task.name = name;
     task.taskDescription = description;
+    
+    
+    // Delete image
+    if ([task.image length]) {
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:task.image];
+        [[NSFileManager defaultManager] removeItemAtPath: filePath error: nil];
+        
+        task.image = nil;;
+
+    }
+    
+    
+    // Add new image
+    if (data) {
+        
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
+        NSString *imageName = [[formatter stringFromDate:[NSDate date]] stringByAppendingString:@".png"];
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:imageName];
+        
+        [UIImagePNGRepresentation([UIImage imageWithData:data]) writeToFile:filePath atomically:YES];
+        
+        task.image = imageName;
+    }
+
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:nil];
+    
     
     if (block)
         block(nil);

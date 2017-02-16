@@ -50,6 +50,12 @@
         [self.view setNeedsUpdateConstraints];
         [self.view layoutIfNeeded];
     }
+    else {
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:self.currentTask.image];
+        self.imageView.image = [UIImage imageWithContentsOfFile:filePath];
+    }
     
     [self setupStatusButton];
 }

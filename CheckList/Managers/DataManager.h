@@ -33,9 +33,9 @@ typedef void (^SuccesBlock)     (NSError *error);
 
 - (void)getTasksForEvent:(Event *)event withCompletion:(ContentBlock)block;
 
-- (void)createTask:(NSString *)name taskDescription:(NSString *)description forEvent:(Event *)event withbCompletion:(void (^)(Task *task))block;
+- (void)createTask:(NSString *)name taskDescription:(NSString *)description forEvent:(Event *)event imageData:(NSData *)data withbCompletion:(void (^)(Task *task))block;
 
-- (void)updateTask:(Task *)task taskName:(NSString *)name taskDescription:(NSString *)description withCompletion:(SuccesBlock)block;
+- (void)updateTask:(Task *)task taskName:(NSString *)name taskDescription:(NSString *)description imageData:(NSData *)data withCompletion:(SuccesBlock)block;
 
 - (void)updateTask:(Task *)task completeStatus:(BOOL)status withCompletion:(SuccesBlock)block;
 

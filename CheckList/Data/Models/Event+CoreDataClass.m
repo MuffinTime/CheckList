@@ -12,7 +12,13 @@
 
 @implementation Event
 
-#pragma mark - Public
+#pragma mark - Lifecycle
 
+- (void)prepareForDeletion {
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:self.image];
+    [[NSFileManager defaultManager] removeItemAtPath: filePath error: nil];
+}
 
 @end
