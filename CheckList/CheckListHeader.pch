@@ -1,0 +1,36 @@
+//
+//  CheckListHeader.pch
+//  CheckList
+//
+//  Created by Винниченко Дмитрий on 16/02/2017.
+//  Copyright © 2017 Vinnichenko Dmitry. All rights reserved.
+//
+
+#ifndef CheckListHeader_pch
+#define CheckListHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+
+/* Frameworks */
+#import <MagicalRecord/MagicalRecord.h>
+
+
+/* Models */
+#import "Event+CoreDataClass.h"
+#import "Task+CoreDataClass.h"
+
+
+/* Managers */
+#import "AuthManager.h"
+#import "DataManager.h"
+
+
+/* Categories */
+#import "UIView+ShakeAnimation.h"
+
+
+#endif /* CheckListHeader_pch */

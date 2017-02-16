@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80A34BBA1E54A8C5004CDF26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34BB91E54A8C5004CDF26 /* main.m */; };
+		80A34BBD1E54A8C5004CDF26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34BBC1E54A8C5004CDF26 /* AppDelegate.m */; };
+		80A34BC31E54A8C5004CDF26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A34BC11E54A8C5004CDF26 /* Main.storyboard */; };
+		80A34BC51E54A8C5004CDF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A34BC41E54A8C5004CDF26 /* Assets.xcassets */; };
+		80A34BC81E54A8C5004CDF26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A34BC61E54A8C5004CDF26 /* LaunchScreen.storyboard */; };
+		80A34BDA1E54A9BA004CDF26 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34BD91E54A9BA004CDF26 /* AuthViewController.m */; };
+		80A34BE61E55109F004CDF26 /* EventsList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80A34BE41E55109F004CDF26 /* EventsList.xcdatamodeld */; };
+		80A34C1D1E55230B004CDF26 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34C1C1E55230B004CDF26 /* DataManager.m */; };
+		80A34C251E552E2C004CDF26 /* UIView+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34C241E552E2C004CDF26 /* UIView+ShakeAnimation.m */; };
+		80A34C301E552F51004CDF26 /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34C291E552F51004CDF26 /* CreateEventViewController.m */; };
+		80A34C311E552F51004CDF26 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34C2D1E552F51004CDF26 /* EventTableViewCell.m */; };
+		80A34C321E552F51004CDF26 /* MainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34C2F1E552F51004CDF26 /* MainListViewController.m */; };
+		80A34C381E55410D004CDF26 /* TasksListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34C371E55410D004CDF26 /* TasksListViewController.m */; };
+		80A34C3D1E55ACC5004CDF26 /* CreateTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34C3C1E55ACC5004CDF26 /* CreateTaskViewController.m */; };
+		80A34C411E55B28E004CDF26 /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34C401E55B28E004CDF26 /* TaskTableViewCell.m */; };
+		80A34C451E55BD2B004CDF26 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34C441E55BD2B004CDF26 /* TaskViewController.m */; };
+		80A34C481E55C9CD004CDF26 /* AuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A34C471E55C9CD004CDF26 /* AuthManager.m */; };
+		80A34C5D1E55D561004CDF26 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A34C591E55D561004CDF26 /* Bolts.framework */; };
+		80A34C5E1E55D561004CDF26 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A34C5A1E55D561004CDF26 /* FBSDKCoreKit.framework */; };
+		80A34C5F1E55D561004CDF26 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A34C5B1E55D561004CDF26 /* FBSDKLoginKit.framework */; };
+		80A34C601E55D561004CDF26 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A34C5C1E55D561004CDF26 /* FBSDKShareKit.framework */; };
+		8885D7363AA640A922D30E63 /* libPods-CheckList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C962A76EA94CBF8177BA68A /* libPods-CheckList.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C962A76EA94CBF8177BA68A /* libPods-CheckList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A34BB51E54A8C5004CDF26 /* CheckList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A34BB91E54A8C5004CDF26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80A34BBB1E54A8C5004CDF26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80A34BBC1E54A8C5004CDF26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80A34BC21E54A8C5004CDF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80A34BC41E54A8C5004CDF26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80A34BC71E54A8C5004CDF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80A34BC91E54A8C5004CDF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A34BD81E54A9BA004CDF26 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		80A34BD91E54A9BA004CDF26 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
+		80A34BE51E55109F004CDF26 /* EventsList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsList.xcdatamodel; sourceTree = "<group>"; };
+		80A34C0D1E5513F5004CDF26 /* Event+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Event+CoreDataClass.h"; sourceTree = "<group>"; };
+		80A34C0E1E5513F5004CDF26 /* Event+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Event+CoreDataClass.m"; sourceTree = "<group>"; };
+		80A34C0F1E5513F5004CDF26 /* Event+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Event+CoreDataProperties.h"; sourceTree = "<group>"; };
+		80A34C101E5513F5004CDF26 /* Event+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Event+CoreDataProperties.m"; sourceTree = "<group>"; };
+		80A34C111E5513F5004CDF26 /* Task+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Task+CoreDataClass.h"; sourceTree = "<group>"; };
+		80A34C121E5513F5004CDF26 /* Task+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Task+CoreDataClass.m"; sourceTree = "<group>"; };
+		80A34C131E5513F5004CDF26 /* Task+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Task+CoreDataProperties.h"; sourceTree = "<group>"; };
+		80A34C141E5513F5004CDF26 /* Task+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Task+CoreDataProperties.m"; sourceTree = "<group>"; };
+		80A34C1A1E55171E004CDF26 /* CheckListHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckListHeader.pch; sourceTree = "<group>"; };
+		80A34C1B1E55230B004CDF26 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		80A34C1C1E55230B004CDF26 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		80A34C231E552E2C004CDF26 /* UIView+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ShakeAnimation.h"; sourceTree = "<group>"; };
+		80A34C241E552E2C004CDF26 /* UIView+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShakeAnimation.m"; sourceTree = "<group>"; };
+		80A34C281E552F51004CDF26 /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
+		80A34C291E552F51004CDF26 /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
+		80A34C2C1E552F51004CDF26 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		80A34C2D1E552F51004CDF26 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		80A34C2E1E552F51004CDF26 /* MainListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainListViewController.h; sourceTree = "<group>"; };
+		80A34C2F1E552F51004CDF26 /* MainListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainListViewController.m; sourceTree = "<group>"; };
+		80A34C361E55410D004CDF26 /* TasksListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksListViewController.h; sourceTree = "<group>"; };
+		80A34C371E55410D004CDF26 /* TasksListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksListViewController.m; sourceTree = "<group>"; };
+		80A34C3B1E55ACC5004CDF26 /* CreateTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTaskViewController.h; sourceTree = "<group>"; };
+		80A34C3C1E55ACC5004CDF26 /* CreateTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTaskViewController.m; sourceTree = "<group>"; };
+		80A34C3F1E55B28E004CDF26 /* TaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewCell.h; sourceTree = "<group>"; };
+		80A34C401E55B28E004CDF26 /* TaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewCell.m; sourceTree = "<group>"; };
+		80A34C431E55BD2B004CDF26 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		80A34C441E55BD2B004CDF26 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
+		80A34C461E55C9CD004CDF26 /* AuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthManager.h; sourceTree = "<group>"; };
+		80A34C471E55C9CD004CDF26 /* AuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthManager.m; sourceTree = "<group>"; };
+		80A34C591E55D561004CDF26 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		80A34C5A1E55D561004CDF26 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		80A34C5B1E55D561004CDF26 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		80A34C5C1E55D561004CDF26 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		AE0CC7ED57C83575B421EE9E /* Pods-CheckList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckList.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckList/Pods-CheckList.release.xcconfig"; sourceTree = "<group>"; };
+		B38035D2882A557B385A8943 /* Pods-CheckList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckList/Pods-CheckList.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80A34BB21E54A8C4004CDF26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8885D7363AA640A922D30E63 /* libPods-CheckList.a in Frameworks */,
+				80A34C5E1E55D561004CDF26 /* FBSDKCoreKit.framework in Frameworks */,
+				80A34C601E55D561004CDF26 /* FBSDKShareKit.framework in Frameworks */,
+				80A34C5F1E55D561004CDF26 /* FBSDKLoginKit.framework in Frameworks */,
+				80A34C5D1E55D561004CDF26 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6ADB18F51B4DC4F2AA320E29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C591E55D561004CDF26 /* Bolts.framework */,
+				80A34C5A1E55D561004CDF26 /* FBSDKCoreKit.framework */,
+				80A34C5B1E55D561004CDF26 /* FBSDKLoginKit.framework */,
+				80A34C5C1E55D561004CDF26 /* FBSDKShareKit.framework */,
+				3C962A76EA94CBF8177BA68A /* libPods-CheckList.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80A34BAC1E54A8C4004CDF26 = {
+			isa = PBXGroup;
+			children = (
+				80A34BB71E54A8C5004CDF26 /* CheckList */,
+				80A34BB61E54A8C5004CDF26 /* Products */,
+				94C7BE60F425770C005C22DA /* Pods */,
+				6ADB18F51B4DC4F2AA320E29 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		80A34BB61E54A8C5004CDF26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80A34BB51E54A8C5004CDF26 /* CheckList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80A34BB71E54A8C5004CDF26 /* CheckList */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C211E552E23004CDF26 /* Custom */,
+				80A34BE31E551082004CDF26 /* Data */,
+				80A34BD01E54A93A004CDF26 /* Managers */,
+				80A34BCF1E54A93A004CDF26 /* Controllers */,
+				80A34BBB1E54A8C5004CDF26 /* AppDelegate.h */,
+				80A34BBC1E54A8C5004CDF26 /* AppDelegate.m */,
+				80A34BC11E54A8C5004CDF26 /* Main.storyboard */,
+				80A34BB81E54A8C5004CDF26 /* Supporting Files */,
+			);
+			path = CheckList;
+			sourceTree = "<group>";
+		};
+		80A34BB81E54A8C5004CDF26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80A34BC41E54A8C5004CDF26 /* Assets.xcassets */,
+				80A34BC61E54A8C5004CDF26 /* LaunchScreen.storyboard */,
+				80A34BC91E54A8C5004CDF26 /* Info.plist */,
+				80A34BB91E54A8C5004CDF26 /* main.m */,
+				80A34C1A1E55171E004CDF26 /* CheckListHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80A34BCF1E54A93A004CDF26 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80A34BD71E54A99B004CDF26 /* Auth */,
+				80A34C261E552F51004CDF26 /* Events */,
+				80A34C331E5540C4004CDF26 /* Tasks */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		80A34BD01E54A93A004CDF26 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C461E55C9CD004CDF26 /* AuthManager.h */,
+				80A34C471E55C9CD004CDF26 /* AuthManager.m */,
+				80A34C1B1E55230B004CDF26 /* DataManager.h */,
+				80A34C1C1E55230B004CDF26 /* DataManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		80A34BD71E54A99B004CDF26 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				80A34BD81E54A9BA004CDF26 /* AuthViewController.h */,
+				80A34BD91E54A9BA004CDF26 /* AuthViewController.m */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		80A34BE31E551082004CDF26 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C001E55132B004CDF26 /* Models */,
+				80A34BE41E55109F004CDF26 /* EventsList.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		80A34C001E55132B004CDF26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C0D1E5513F5004CDF26 /* Event+CoreDataClass.h */,
+				80A34C0E1E5513F5004CDF26 /* Event+CoreDataClass.m */,
+				80A34C0F1E5513F5004CDF26 /* Event+CoreDataProperties.h */,
+				80A34C101E5513F5004CDF26 /* Event+CoreDataProperties.m */,
+				80A34C111E5513F5004CDF26 /* Task+CoreDataClass.h */,
+				80A34C121E5513F5004CDF26 /* Task+CoreDataClass.m */,
+				80A34C131E5513F5004CDF26 /* Task+CoreDataProperties.h */,
+				80A34C141E5513F5004CDF26 /* Task+CoreDataProperties.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80A34C211E552E23004CDF26 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C221E552E2C004CDF26 /* ShakeView */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		80A34C221E552E2C004CDF26 /* ShakeView */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C231E552E2C004CDF26 /* UIView+ShakeAnimation.h */,
+				80A34C241E552E2C004CDF26 /* UIView+ShakeAnimation.m */,
+			);
+			path = ShakeView;
+			sourceTree = "<group>";
+		};
+		80A34C261E552F51004CDF26 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C2A1E552F51004CDF26 /* Events List */,
+				80A34C271E552F51004CDF26 /* Create Event */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		80A34C271E552F51004CDF26 /* Create Event */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C281E552F51004CDF26 /* CreateEventViewController.h */,
+				80A34C291E552F51004CDF26 /* CreateEventViewController.m */,
+			);
+			path = "Create Event";
+			sourceTree = "<group>";
+		};
+		80A34C2A1E552F51004CDF26 /* Events List */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C2B1E552F51004CDF26 /* Cells */,
+				80A34C2E1E552F51004CDF26 /* MainListViewController.h */,
+				80A34C2F1E552F51004CDF26 /* MainListViewController.m */,
+			);
+			path = "Events List";
+			sourceTree = "<group>";
+		};
+		80A34C2B1E552F51004CDF26 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C2C1E552F51004CDF26 /* EventTableViewCell.h */,
+				80A34C2D1E552F51004CDF26 /* EventTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		80A34C331E5540C4004CDF26 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C341E5540EC004CDF26 /* Tasks List */,
+				80A34C351E5540EC004CDF26 /* Create Task */,
+				80A34C421E55BD10004CDF26 /* Task */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		80A34C341E5540EC004CDF26 /* Tasks List */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C3E1E55B278004CDF26 /* Cells */,
+				80A34C361E55410D004CDF26 /* TasksListViewController.h */,
+				80A34C371E55410D004CDF26 /* TasksListViewController.m */,
+			);
+			path = "Tasks List";
+			sourceTree = "<group>";
+		};
+		80A34C351E5540EC004CDF26 /* Create Task */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C3B1E55ACC5004CDF26 /* CreateTaskViewController.h */,
+				80A34C3C1E55ACC5004CDF26 /* CreateTaskViewController.m */,
+			);
+			path = "Create Task";
+			sourceTree = "<group>";
+		};
+		80A34C3E1E55B278004CDF26 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C3F1E55B28E004CDF26 /* TaskTableViewCell.h */,
+				80A34C401E55B28E004CDF26 /* TaskTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		80A34C421E55BD10004CDF26 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				80A34C431E55BD2B004CDF26 /* TaskViewController.h */,
+				80A34C441E55BD2B004CDF26 /* TaskViewController.m */,
+			);
+			name = Task;
+			path = CheckList/Controllers/Tasks/Task;
+			sourceTree = SOURCE_ROOT;
+		};
+		94C7BE60F425770C005C22DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B38035D2882A557B385A8943 /* Pods-CheckList.debug.xcconfig */,
+				AE0CC7ED57C83575B421EE9E /* Pods-CheckList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80A34BB41E54A8C4004CDF26 /* CheckList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A34BCC1E54A8C5004CDF26 /* Build configuration list for PBXNativeTarget "CheckList" */;
+			buildPhases = (
+				60ED426D1429E214F49DF839 /* [CP] Check Pods Manifest.lock */,
+				80A34BB11E54A8C4004CDF26 /* Sources */,
+				80A34BB21E54A8C4004CDF26 /* Frameworks */,
+				80A34BB31E54A8C4004CDF26 /* Resources */,
+				12BEE21811832A0BB4CA22E4 /* [CP] Embed Pods Frameworks */,
+				0EA396B379153C957DDA91DF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheckList;
+			productName = CheckList;
+			productReference = 80A34BB51E54A8C5004CDF26 /* CheckList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80A34BAD1E54A8C4004CDF26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Vinnichenko Dmitry";
+				TargetAttributes = {
+					80A34BB41E54A8C4004CDF26 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Z95TVNK533;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 80A34BB01E54A8C4004CDF26 /* Build configuration list for PBXProject "CheckList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80A34BAC1E54A8C4004CDF26;
+			productRefGroup = 80A34BB61E54A8C5004CDF26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80A34BB41E54A8C4004CDF26 /* CheckList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80A34BB31E54A8C4004CDF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A34BC81E54A8C5004CDF26 /* LaunchScreen.storyboard in Resources */,
+				80A34BC51E54A8C5004CDF26 /* Assets.xcassets in Resources */,
+				80A34BC31E54A8C5004CDF26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA396B379153C957DDA91DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckList/Pods-CheckList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12BEE21811832A0BB4CA22E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckList/Pods-CheckList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60ED426D1429E214F49DF839 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80A34BB11E54A8C4004CDF26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A34BE61E55109F004CDF26 /* EventsList.xcdatamodeld in Sources */,
+				80A34C481E55C9CD004CDF26 /* AuthManager.m in Sources */,
+				80A34C3D1E55ACC5004CDF26 /* CreateTaskViewController.m in Sources */,
+				80A34C381E55410D004CDF26 /* TasksListViewController.m in Sources */,
+				80A34C321E552F51004CDF26 /* MainListViewController.m in Sources */,
+				80A34BDA1E54A9BA004CDF26 /* AuthViewController.m in Sources */,
+				80A34C451E55BD2B004CDF26 /* TaskViewController.m in Sources */,
+				80A34C311E552F51004CDF26 /* EventTableViewCell.m in Sources */,
+				80A34C301E552F51004CDF26 /* CreateEventViewController.m in Sources */,
+				80A34BBD1E54A8C5004CDF26 /* AppDelegate.m in Sources */,
+				80A34C411E55B28E004CDF26 /* TaskTableViewCell.m in Sources */,
+				80A34BBA1E54A8C5004CDF26 /* main.m in Sources */,
+				80A34C251E552E2C004CDF26 /* UIView+ShakeAnimation.m in Sources */,
+				80A34C1D1E55230B004CDF26 /* DataManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80A34BC11E54A8C5004CDF26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A34BC21E54A8C5004CDF26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80A34BC61E54A8C5004CDF26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A34BC71E54A8C5004CDF26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80A34BCA1E54A8C5004CDF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80A34BCB1E54A8C5004CDF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80A34BCD1E54A8C5004CDF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38035D2882A557B385A8943 /* Pods-CheckList.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Z95TVNK533;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = CheckList/CheckListHeader.pch;
+				INFOPLIST_FILE = CheckList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.checklist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CheckList-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		80A34BCE1E54A8C5004CDF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0CC7ED57C83575B421EE9E /* Pods-CheckList.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Z95TVNK533;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = CheckList/CheckListHeader.pch;
+				INFOPLIST_FILE = CheckList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.checklist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CheckList-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80A34BB01E54A8C4004CDF26 /* Build configuration list for PBXProject "CheckList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A34BCA1E54A8C5004CDF26 /* Debug */,
+				80A34BCB1E54A8C5004CDF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A34BCC1E54A8C5004CDF26 /* Build configuration list for PBXNativeTarget "CheckList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A34BCD1E54A8C5004CDF26 /* Debug */,
+				80A34BCE1E54A8C5004CDF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80A34BE41E55109F004CDF26 /* EventsList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80A34BE51E55109F004CDF26 /* EventsList.xcdatamodel */,
+			);
+			currentVersion = 80A34BE51E55109F004CDF26 /* EventsList.xcdatamodel */;
+			path = EventsList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 80A34BAD1E54A8C4004CDF26 /* Project object */;
+}
